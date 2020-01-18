@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="NoWayze_Barcode_Wizard.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NoWayze_Barcode_Wizard"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="800" Height="600">
+
+    <Grid>
+        <Button Content="Print" 
+                Click="PrintButton" 
+                Margin="690,490,0,0" 
+                Width="100" 
+                Height="100" 
+                VerticalAlignment="Top"/>
+        <Button Content="Add Random Barcode to List" 
+                Click="TestClicker" 
+                Margin="593,10,0,0" 
+                VerticalAlignment="Top"  />
+        <ListView ItemsSource="{x:Bind currentScanData.BarcodeList}"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Height="450" Width="200" Margin="50,100,0,0" 
+            ScrollViewer.VerticalScrollBarVisibility="Auto"
+            RightTapped="ListView_RightTapped">
+            
+            <!--keep last added item in view-->
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsStackPanel ItemsUpdatingScrollMode="KeepLastItemInView" VerticalAlignment="Bottom" />
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            
+            <ListView.Resources>
+                <MenuFlyout x:Name="allBarcodesMenuFlyout">
+                    <MenuFlyout.Items>
+                        <MenuFlyoutItem x:Name="Remove" Text="Remove"    Click="Remove_Click"/>
+                    </MenuFlyout.Items>
+                </MenuFlyout>
+            </ListView.Resources>
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local:Barcode">
+                    <TextBlock Text="{x:Bind Value}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Content="ClearList" 
+                Margin="690,380,0,0" 
+                VerticalAlignment="Top"
+                Width="100" 
+                Height="100" 
+                Click="ClearList"/>
+    </Grid>
+</Page>
