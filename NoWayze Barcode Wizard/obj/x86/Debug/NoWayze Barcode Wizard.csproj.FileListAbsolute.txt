@@ -42,3 +42,6 @@ D:\Visual Studio Projects\NoWayze-Barcode-Wizard\NoWayze-Barcode-Wizard\NoWayze 
 D:\Visual Studio Projects\NoWayze-Barcode-Wizard\NoWayze-Barcode-Wizard\NoWayze Barcode Wizard\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\Visual Studio Projects\NoWayze-Barcode-Wizard\NoWayze-Barcode-Wizard\NoWayze Barcode Wizard\obj\x86\Debug\ProjectArchitectures.txt
 D:\Visual Studio Projects\NoWayze-Barcode-Wizard\NoWayze-Barcode-Wizard\NoWayze Barcode Wizard\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885274160000000.json
+D:\Visual Studio Projects\NoWayze-Barcode-Wizard\NoWayze-Barcode-Wizard\NoWayze Barcode Wizard\bin\x86\Debug\zxing.dll
+D:\Visual Studio Projects\NoWayze-Barcode-Wizard\NoWayze-Barcode-Wizard\NoWayze Barcode Wizard\bin\x86\Debug\zxing.pdb
+D:\Visual Studio Projects\NoWayze-Barcode-Wizard\NoWayze-Barcode-Wizard\NoWayze Barcode Wizard\obj\x86\Debug\zxing.pri.xml

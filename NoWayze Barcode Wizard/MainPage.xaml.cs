@@ -44,7 +44,6 @@ namespace NoWayze_Barcode_Wizard
             this.InitializeComponent();
             currentScanData = new ScannerData();
         }
-
         private async void PrintButton(object sender, RoutedEventArgs e)
         {
             MediaElement mediaElement = new MediaElement();
@@ -59,7 +58,6 @@ namespace NoWayze_Barcode_Wizard
             string rngBarcode = "ULE-" + rng.Next(0, 10) + rng.Next(0, 10) + rng.Next(0, 10) + rng.Next(0, 10) + rng.Next(0, 10) + rng.Next(0, 10) + rng.Next(0, 10) + rng.Next(0, 10) + rng.Next(0, 10) + rng.Next(0, 10) + "-" + rng.Next(0, 10) + rng.Next(0, 10);
             currentScanData.TryAddBarcode(rngBarcode);
         }
-
         private object selectedElement = null;
         private void ListView_RightTapped(object sender, RightTappedRoutedEventArgs e)
         {
@@ -71,7 +69,6 @@ namespace NoWayze_Barcode_Wizard
         {
             currentScanData.RemoveBarcode((Barcode)selectedElement);
         }
-
         private void ClearList(object sender, RoutedEventArgs e)
         {
             currentScanData.BarcodeList.Clear();

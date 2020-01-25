@@ -30,17 +30,21 @@
     <AppXManifest Include="D:\Visual Studio Projects\NoWayze-Barcode-Wizard\NoWayze-Barcode-Wizard\NoWayze Barcode Wizard\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-17T21:35:34.135</Modified>
+      <Modified>2020-01-19T22:45:58.226</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Visual Studio Projects\NoWayze-Barcode-Wizard\NoWayze-Barcode-Wizard\NoWayze Barcode Wizard\bin\x86\Debug\NoWayze Barcode Wizard.exe">
       <PackagePath>entrypoint\NoWayze Barcode Wizard.exe</PackagePath>
-      <Modified>2020-01-17T21:35:33.865</Modified>
+      <Modified>2020-01-19T22:45:57.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2019-07-22T13:01:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mello\.nuget\packages\zxing.net\0.16.5\lib\uap10\zxing.dll">
+      <PackagePath>zxing.dll</PackagePath>
+      <Modified>2019-09-28T18:41:30.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -90,11 +94,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Visual Studio Projects\NoWayze-Barcode-Wizard\NoWayze-Barcode-Wizard\NoWayze Barcode Wizard\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-01-17T21:35:33.753</Modified>
+      <Modified>2020-01-19T22:45:57.128</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Visual Studio Projects\NoWayze-Barcode-Wizard\NoWayze-Barcode-Wizard\NoWayze Barcode Wizard\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-01-17T21:35:33.753</Modified>
+      <Modified>2020-01-19T22:45:57.128</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -102,11 +106,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Visual Studio Projects\NoWayze-Barcode-Wizard\NoWayze-Barcode-Wizard\NoWayze Barcode Wizard\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-01-17T19:08:32.510</Modified>
+      <Modified>2020-01-19T22:45:57.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Visual Studio Projects\NoWayze-Barcode-Wizard\NoWayze-Barcode-Wizard\NoWayze Barcode Wizard\bin\x86\Debug\Core\NoWayze Barcode Wizard.exe">
       <PackagePath>NoWayze Barcode Wizard.exe</PackagePath>
-      <Modified>2020-01-17T21:35:34.133</Modified>
+      <Modified>2020-01-19T22:45:58.207</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
