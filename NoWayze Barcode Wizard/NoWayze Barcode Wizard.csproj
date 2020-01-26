@@ -121,6 +121,8 @@
     </Compile>
     <Compile Include="Assets\Barcode.cs" />
     <Compile Include="Assets\BarcodeGeneration.cs" />
+    <Compile Include="Assets\BarcodePrinter.cs" />
+    <Compile Include="Assets\POSScanner.cs" />
     <Compile Include="Assets\UIGeneration.cs" />
     <Compile Include="Assets\ScannerData.cs" />
     <Compile Include="MainPage.xaml.cs">
@@ -160,6 +162,11 @@
     <PackageReference Include="ZXing.Net">
       <Version>0.16.5</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="WindowsDesktop, Version=10.0.18362.0">
+      <Name>Windows Desktop Extensions for the UWP</Name>
+    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

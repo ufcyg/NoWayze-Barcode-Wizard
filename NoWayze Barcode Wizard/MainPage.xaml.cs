@@ -37,18 +37,23 @@ namespace NoWayze_Barcode_Wizard
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public static MainPage Current;
         public ObservableCollection<ScannerData> observableScannerData { get; } = new ObservableCollection<ScannerData>();
-        private ScannerData currentScanData;
+        private POSScanner scanner;
+        public ScannerData currentScanData;
         public MainPage()
         {
             this.InitializeComponent();
+
+            Current = this;
             currentScanData = new ScannerData();
+            scanner = new POSScanner(currentScanData);
         }
         private async void PrintButton(object sender, RoutedEventArgs e)
         {
             MediaElement mediaElement = new MediaElement();
             var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
-            Windows.Media.SpeechSynthesis.SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync("printing . . .");
+            Windows.Media.SpeechSynthesis.SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync("printing ... ... ... not");
             mediaElement.SetSource(stream, stream.ContentType);
             mediaElement.Play();
         }
